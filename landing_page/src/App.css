@@ -1,0 +1,70 @@
+.App{
+    width: 100%;
+    min-height: 100vh;
+    margin: 0%;
+    box-sizing: border-box;
+    background-color: #358ddfd3;
+    position: relative;
+    font-family: sans-serif;
+}
+
+.App .card{
+    position: absolute;
+    top: 4%;
+    border: none;
+} 
+.App .card-header{
+    border: none;
+    background-color: #0f99deb5;
+}
+
+.formInput{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 5px 20px 5px 20px;
+    font-size: 16px;
+}
+
+input{
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+label{
+    font-size: 14px;
+    color: #000000;
+    padding: 5px 0px;
+}
+
+span{
+    font-size: 12px;
+    padding: 3px;
+    color: red;
+    display: none;
+}
+
+input:invalid[focused="true"]{
+    border: 1px solid red;
+}
+
+input:invalid[focused="true"] ~ span{
+    display: block;
+}
+
+.card form button{
+    border: none;
+    border-radius: 5px;
+    width: 90%;
+    padding: 2% 0%;
+    margin: 15px 0px 10px 20px;
+    color: #ffff;
+    background-color: #358ddf;
+}
+
+.card .signin{
+    font-size: 16px;
+    margin-left: 20%;
+    margin-bottom: 15px;
+}
